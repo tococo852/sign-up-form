@@ -1,0 +1,127 @@
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.element {
+  font-family: var(--system-ui);
+}
+/*
+ reset credit to joshwcomeau.com
+*/
+
+body{
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+div{
+  border: 1px solid red;  
+}
+label {
+    display: block;
+  }
+  input {
+    border: 1px solid #2e2e2e;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+
+  }
+  input:invalid {
+    border-color: rgba(248, 42, 42, 0.699);
+  }
+  input:focus{
+    border-color: rgba(8, 63, 126, 0.685);
+  }
+ 
+.picture{
+  background-image: url('./trees.avif');
+  background-position:  center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 40vh;
+
+
+}
+.logobox{
+  position: relative;
+  top: 7rem;
+  display: flex;
+  justify-content: center;
+  background-color: #2e2e2e8c;
+
+}
+.odin-logo{
+  width: 7rem;
+  height: 7rem;
+}
+.text{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.description{}
+.formbox{}
+.sign-up-form{
+display: flex;
+}
+.account{}
+
+
+
+
+
