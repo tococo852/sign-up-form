@@ -62,10 +62,10 @@ body{
   margin: 0;
   display: flex;
   align-items: stretch;
-  min-height: 100vh;
+  height: 100vh;
+  
 }
 div{
-  border: 1px solid red;  
 }
 label {
     display: block;
@@ -84,21 +84,20 @@ label {
   input:focus{
     border-color: rgba(8, 63, 126, 0.685);
   }
- 
+
 .picture{
   background-image: url('./trees.avif');
   background-position:  center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 40vh;
-
+  flex-basis: 70vh;
 
 }
 .logobox{
   position: relative;
-  top: 7rem;
+  top: 12rem;
   display: flex;
   justify-content: center;
   background-color: #2e2e2e8c;
@@ -112,14 +111,75 @@ label {
   flex-grow: 2;
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
-.description{}
-.formbox{}
+.description{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:start;
+  background-color: #F5F7F8 ;
+  flex-shrink: 1;
+  padding: 5rem 15rem 0rem 5rem;
+
+}
+.description p{
+  font: bold 2rem "Open Sans", sans-serif;
+  padding: 0rem 30rem 1rem 0rem;
+}
+
+.formbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:start;
+  flex-shrink: 0;
+  background-color: hsl(0, 0%, 99%)  ;
+  padding: 2rem 5rem;
+  box-shadow: 5px 5px 10px gray;
+
+}
 .sign-up-form{
 display: flex;
+gap: 1rem;
 }
-.account{}
+.form-column{
+  display: flex;
+  flex-direction: column;
+
+}
+.form-column> *{
+}
+
+.account{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: start;
+  background-color: #F5F7F8 ;
+  flex-grow: 1;
+  padding: 2rem 0rem 0rem 5rem;  
+  gap:1rem;
+
+}
+.account p{
+  font: 500 0.95rem "Open Sans", sans-serif;
+
+}
+
+button{
+  background-color: 	hsl(160, 47%, 50%);
+  border: none;
+  padding: 12px 29px;
+  color: #F5F7F8;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
 
 
 
